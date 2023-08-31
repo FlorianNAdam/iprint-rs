@@ -1,5 +1,7 @@
 # iprint-rs
 
+[![Rust](https://github.com/bitflags/bitflags/workflows/Rust/badge.svg)](https://github.com/bitflags/bitflags/actions)
+
 `iprint-rs` is a Rust utility library for indented printing and logging, designed to help you easily trace the execution of your code. The library provides a suite of macros for indented formatting (`iformat`), simplified indented printing (`iprintln`), and logging with varying levels (`itrace`, `idebug`, `iinfo`, `iwarn`, `ierror`). All features are geared to improve debugging and code tracing by automatically adjusting indentation based on the function call depth.
 
 ## ⚠️ Warning
