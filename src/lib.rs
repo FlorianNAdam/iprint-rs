@@ -28,14 +28,14 @@
 //!
 //! ```toml
 //! [dependencies]
-//! iprint-rs = "0.1.0"  # Use the latest version
+//! iprint-rs = "0.1.1"  # Use the latest version
 //! ```
 //!
 //! To enable the `log` feature for additional logging functionalities:
 //!
 //! ```toml
 //! [dependencies]
-//! iprint-rs = { version = "0.1.0", features = ["log"] }
+//! iprint-rs = { version = "0.1.1", features = ["log"] }
 //! ```
 //!
 //! ## Usage Examples
