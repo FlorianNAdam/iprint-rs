@@ -13,4 +13,3 @@ log = ["dep:log"]
 
 [dependencies]
 log = {version="0.4.20", optional= true}
-simple_logger = "4.2.0"
