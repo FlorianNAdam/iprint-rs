@@ -1,0 +1,15 @@
+[package]
+name = "iprint"
+version = "0.1.2"
+license = "MIT"
+description = "A simple debugging utility that prints indented text based on function call depth"
+homepage = "https://github.com/FlorianNAdam/iprint-rs"
+repository = "https://github.com/FlorianNAdam/iprint-rs"
+readme = "README.md"
+edition = "2021"
+
+[features]
+log = ["dep:log"]
+
+[dependencies]
+log = {version="0.4.20", optional= true}
