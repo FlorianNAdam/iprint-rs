@@ -1,6 +1,6 @@
 [package]
 name = "iprint"
-version = "0.1.2"
+version = "0.1.3"
 license = "MIT"
 description = "A simple debugging utility that prints indented text based on function call depth"
 homepage = "https://github.com/FlorianNAdam/iprint-rs"
