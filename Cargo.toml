@@ -1,0 +1,11 @@
+[package]
+name = "iprint"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+log = ["dep:log"]
+
+[dependencies]
+log = {version="0.4.20", optional= true}
+simple_logger = "4.2.0"
