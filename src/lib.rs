@@ -91,9 +91,12 @@
 //! ```
 
 
+#[allow(unused)]
+mod tests;
+
 use std::cell::RefCell;
 
-#[cfg(feature="log")]
+#[cfg(feature = "log")]
 pub use log::{trace, debug, info, warn, error};
 
 thread_local!(
@@ -201,7 +204,7 @@ macro_rules! iprintln {
     }
 }
 
-#[cfg(feature="log")]
+#[cfg(feature = "log")]
 pub mod ilog {
     /// Logs a message at various levels with automatic indentation.
     ///
