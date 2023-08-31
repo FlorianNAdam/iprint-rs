@@ -28,14 +28,14 @@
 //!
 //! ```toml
 //! [dependencies]
-//! iprint = "0.1.3"  # Use the latest version
+//! iprint = "0.1.4"  # Use the latest version
 //! ```
 //!
 //! To enable the `log` feature for additional logging functionalities:
 //!
 //! ```toml
 //! [dependencies]
-//! iprint = { version = "0.1.3", features = ["log"] }
+//! iprint = { version = "0.1.4", features = ["log"] }
 //! ```
 //!
 //! ## Usage Examples
@@ -94,9 +94,6 @@
 //! ```
 
 use std::cell::RefCell;
-
-#[cfg(feature = "log")]
-pub use log::{debug, error, info, trace, warn};
 
 thread_local!(
     #[doc(hidden)]
@@ -248,7 +245,7 @@ pub mod ilog {
     #[macro_export]
     macro_rules! itrace {
         ($($t:tt)*) => {
-            $crate::trace!("{}", $crate::iformat!($($t)*))
+            trace!("{}", $crate::iformat!($($t)*))
         }
     }
 
@@ -274,7 +271,7 @@ pub mod ilog {
     #[macro_export]
     macro_rules! idebug {
         ($($t:tt)*) => {
-            $crate::debug!("{}", $crate::iformat!($($t)*))
+            debug!("{}", $crate::iformat!($($t)*))
         }
     }
 
@@ -300,7 +297,7 @@ pub mod ilog {
     #[macro_export]
     macro_rules! iinfo {
         ($($t:tt)*) => {
-            $crate::info!("{}", $crate::iformat!($($t)*))
+            info!("{}", $crate::iformat!($($t)*))
         }
     }
 
@@ -326,7 +323,7 @@ pub mod ilog {
     #[macro_export]
     macro_rules! iwarn {
         ($($t:tt)*) => {
-            $crate::warn!("{}", $crate::iformat!($($t)*))
+            warn!("{}", $crate::iformat!($($t)*))
         }
     }
 
@@ -352,7 +349,7 @@ pub mod ilog {
     #[macro_export]
     macro_rules! ierror {
         ($($t:tt)*) => {
-            $crate::error!("{}", $crate::iformat!($($t)*))
+            error!("{}", $crate::iformat!($($t)*))
         }
     }
 }

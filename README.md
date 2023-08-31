@@ -20,14 +20,14 @@ To include `iprint-rs` in your project, add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-iprint = "0.1.3"  # Use the latest version
+iprint = "0.1.4"  # Use the latest version
 ```
 
 To enable logging functionalities, update your `Cargo.toml` like so:
 
 ```toml
 [dependencies]
-iprint = { version = "0.1.3", features = ["log"] }
+iprint = { version = "0.1.4", features = ["log"] }
 ```
 
 ## Usage
